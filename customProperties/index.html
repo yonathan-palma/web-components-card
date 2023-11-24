@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Elementos</title>
+  <style>
+    my-element {
+      --primary-color: blue;
+      --heading-primary: 40px;
+    } 
+  </style>
+</head>
+<body>
+  
+  <h2 class="title">soy un titulo</h2>
+  <my-element>
+    <span slot="title">soy el titulo</span>
+    <span slot="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+  </my-element>
+  <my-element>
+    <span slot="title">soy el titulo 2</span>
+    <span slot="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+  </my-element>
+  
+  <script src="./my-element.js" type="module"></script>
+</body>
+</html>

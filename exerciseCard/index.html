@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    main.conteiner{
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+  </style>
+<body>
+  <main class="conteiner">
+    <card-component 
+      image="nike-blue.png"
+    >
+    <span slot="marca">NIKE</span>
+    <span slot="title">NIKE ZOOM 2020</span>
+    <span slot="subTitle">RUNNING COLLECTION</span>
+    <span slot="description">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Vitae ducimus laudantium iste pariatur est placeat delectus officia asperiores velit dolorum perferendis,
+      recusandae sed neque consequatur, dignissimos reprehenderit libero amet illo.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Vitae ducimus laudantium iste pariatur est placeat delectus officia asperiores velit dolorum perferendis,
+      recusandae sed neque consequatur, dignissimos reprehenderit libero amet illo.
+    </span>
+    <span slot="price">2,500</span>
+  </card-component>
+  </main>
+  
+
+  <script src="card.js" type="module"></script>
+</body>
+</html>
